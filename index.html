@@ -1,147 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>좋은교육연구센터 - 취업·창업·기업교육 분야별 수석 강사단 파트너</title>
-    
-    <meta name="naver-site-verification" content="642b8831164b66f4f0279cadad2f8a47e9ee1c86" />
-    <meta name="description" content="15년 경력 수석 강사 김재근 대표와 공공기관 면접위원, AI 마케팅, 조직 소통 등 분야별 최고의 수석 강사단 에이전시">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800&display=swap');
-        body {
-            font-family: 'Pretendard', sans-serif;
-            background-color: #0B0F19;
-            color: #E2E8F0;
-            scroll-behavior: smooth;
-            overflow-x: hidden;
-        }
-        .glow-text {
-            text-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
-        }
-        .zoom-img {
-            transition: transform 0.5s ease;
-        }
-        .zoom-img:hover {
-            transform: scale(1.05);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        /* ========================================
-           ✨ [신규 추가] 1. 스크롤 페이드인 애니메이션
-        ======================================== */
-        .fade-in-section {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 1s ease-out, transform 1s ease-out;
-            will-change: opacity, transform;
-        }
-        .fade-in-section.is-visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+<!-- ✅ 브라우저 제목 -->
+<title>기업교육 강사 섭외 | 공공기관·기업 맞춤 강사 제안 | 좋은교육연구센터</title>
 
-        /* ========================================
-           ✨ [신규 추가] 2. 움직이는 배경 그라데이션 효과
-        ======================================== */
-        .animated-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            overflow: hidden;
-            pointer-events: none;
-        }
-        .blob {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.25;
-            animation: floatBlob 20s infinite ease-in-out;
-        }
-        .blob-1 {
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, #3b82f6 0%, transparent 70%);
-            top: -100px;
-            left: -100px;
-            animation-delay: 0s;
-        }
-        .blob-2 {
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, #6366f1 0%, transparent 70%);
-            top: 40%;
-            right: -150px;
-            animation-delay: -7s;
-        }
-        .blob-3 {
-            width: 450px;
-            height: 450px;
-            background: radial-gradient(circle, #8b5cf6 0%, transparent 70%);
-            bottom: -100px;
-            left: 30%;
-            animation-delay: -14s;
-        }
-        @keyframes floatBlob {
-            0%, 100% { transform: translate(0, 0) scale(1); }
-            33% { transform: translate(100px, -80px) scale(1.1); }
-            66% { transform: translate(-80px, 60px) scale(0.9); }
-        }
+<!-- ✅ 기본 SEO -->
+<meta name="description" content="기업교육 강사 섭외, 공공기관 특강, 소상공인 교육까지. 주제와 일정에 맞는 전문 강사를 제안합니다. 강의 의뢰부터 출강 준비까지 함께합니다.">
+<meta name="keywords" content="기업교육 강사, 강사 섭외, 강의 의뢰, 공공기관 교육, 맞춤형 기업교육, 전문 강사">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://mygood.netlify.app/">
 
-        /* ========================================
-           ✨ [신규 추가] 3. 마우스 호버 카드 인터랙션
-        ======================================== */
-        .interactive-card {
-            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), 
-                        box-shadow 0.4s ease,
-                        border-color 0.4s ease;
-            will-change: transform;
-        }
-        .interactive-card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 25px 50px -12px rgba(59, 130, 246, 0.25);
-            border-color: rgba(59, 130, 246, 0.5) !important;
-        }
-        
-        /* 갤러리 카드 전용 효과 */
-        .gallery-card {
-            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
-                        box-shadow 0.4s ease;
-            will-change: transform;
-        }
-        .gallery-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 60px -15px rgba(99, 102, 241, 0.4);
-        }
+<!-- ✅ 네이버 소유확인 -->
+<meta name="naver-site-verification" content="642b8831164b66f4f0279cadad2f8a47e9ee1c86" />
 
-        /* 버튼 펄스 효과 */
-        .pulse-btn {
-            position: relative;
-            overflow: hidden;
-        }
-        .pulse-btn::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.2);
-            transform: translate(-50%, -50%);
-            transition: width 0.6s, height 0.6s;
-        }
-        .pulse-btn:hover::after {
-            width: 400px;
-            height: 400px;
-        }
-    </style>
+<!-- ✅ Open Graph (카카오 / 네이버 공유용) -->
+<meta property="og:title" content="기업교육 강사 섭외 | 좋은교육연구센터">
+<meta property="og:description" content="공공기관 · 기업 맞춤 강사 제안">
+<meta property="og:image" content="https://mygood.netlify.app/images/preview.jpg">
+<meta property="og:url" content="https://mygood.netlify.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ko_KR">
+
+<!-- ✅ Twitter 카드 (겸용) -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="기업교육 강사 섭외 | 좋은교육연구센터">
+<meta name="twitter:description" content="공공기관 · 기업 맞춤 강사 제안">
+<meta name="twitter:image" content="https://mygood.netlify.app/images/preview.jpg">
+
+<!-- ✅ 구조화 데이터 (SEO 점수 상승용) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "좋은교육연구센터",
+  "url": "https://mygood.netlify.app/",
+  "description": "기업교육 강사 섭외 및 공공기관 맞춤형 교육 기획 전문",
+  "areaServed": "KR",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+82-10-7482-2007",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+<!-- ✅ 폰트 -->
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700;800&display=swap');
+
+<!-- ✅ Tailwind -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<style>
+body {
+    font-family: 'Pretendard', sans-serif;
+    background-color: #0B0F19;
+    color: #E2E8F0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+</style>
+
 </head>
 <body class="overflow-x-hidden">
 
