@@ -181,12 +181,12 @@
         animation: pulse 2s cubic-bezier(0.4,0,0.6,1) infinite;
     }
     @keyframes pulse {
-        0%,100% { box-shadow: 0 0 0 0 rgba(59,130,246,0.7); }
-        50% { box-shadow: 0 0 0 10px rgba(59,130,246,0); }
+        0%,100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.7); }
+        50% { box-shadow: 0 0 0 10px rgba(59, 130, 246, 0); }
     }
 
     .glow-text {
-        text-shadow: 0 0 20px rgba(96,165,250,0.5);
+        text-shadow: 0 0 20px rgba(96, 165, 250, 0.5);
     }
 
     .zoom-img {
@@ -242,7 +242,8 @@
             <a href="#process" class="hover:text-blue-400 transition-colors">프로세스</a>
             <a href="#cases" class="hover:text-blue-400 transition-colors">운영 사례</a>
         </nav>
-        <a href="#apply-form" class="pulse-btn bg-blue-600 hover:bg-blue-500 text-white font-bold py-2.5 px-5 rounded-full text-sm transition-all shadow-lg">
+        <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+        <a href="#contact-center" class="pulse-btn bg-blue-600 hover:bg-blue-500 text-white font-bold py-2.5 px-5 rounded-full text-sm transition-all shadow-lg">
             교육 사업 문의
         </a>
     </div>
@@ -261,19 +262,20 @@
 
         <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight mb-6">
             교육 사업 기획부터 강사 섭외까지<br/>
-            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 glow-text">한 곳에서 완성하세요</span>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400 glow-text">이제 혼자 떠안지 마십시오.</span>
         </h1>
 
         <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            고용노동부 5년 전담 강사 출신, 희망리턴패키지 총괄 운영 경험을 바탕으로<br/>
+            고용노동부 강의 10년 전담 강사 출신, 희망리턴패키지 총괄 운영 경험을 바탕으로<br/>
             <strong class="text-gray-300">직접 기획·운영</strong>하거나, <strong class="text-gray-300">분야별 최적 강사를 매칭</strong>해 드립니다.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-10">
-            <a href="#apply-form" class="pulse-btn w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold text-base py-4 px-8 rounded-xl transition-all shadow-lg">
+            <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+            <a href="#contact-center" class="pulse-btn w-full sm:w-auto bg-blue-600 hover:bg-blue-500 text-white font-bold text-base py-4 px-8 rounded-xl transition-all shadow-lg">
                 교육 사업 기획 의뢰
             </a>
-            <a href="#apply-form" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base py-4 px-8 rounded-xl transition-all shadow-lg">
+            <a href="#contact-center" class="w-full sm:w-auto bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-base py-4 px-8 rounded-xl transition-all shadow-lg">
                 전문 강사 매칭 신청
             </a>
             <a href="tel:010-7482-2007" class="w-full sm:w-auto border border-gray-700 hover:border-gray-500 hover:bg-gray-800 text-gray-300 font-bold text-base py-4 px-8 rounded-xl transition-all flex items-center justify-center gap-2">
@@ -303,8 +305,8 @@
                     <div class="mx-auto mb-3 flex h-10 w-10 items-center justify-center rounded-full bg-blue-500/10 text-blue-400">
                         <i data-lucide="briefcase-business" class="w-5 h-5"></i>
                     </div>
-                    <p class="text-3xl md:text-4xl font-extrabold text-white mb-1">5년+</p>
-                    <p class="text-xs md:text-sm text-gray-400 leading-snug">고용노동부 전담 강사<br/>희망리턴패키지 총괄</p>
+                    <p class="text-3xl md:text-4xl font-extrabold text-white mb-1">10년+</p>
+                    <p class="text-xs md:text-sm text-gray-400 leading-snug">취업 창업 교육기획<br/>운영 총괄</p>
                 </div>
 
                 <div class="group relative overflow-hidden rounded-2xl border border-indigo-500/20 bg-white/[0.04] backdrop-blur-md p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-indigo-400/50">
@@ -322,7 +324,7 @@
                         <i data-lucide="check-circle-2" class="w-5 h-5"></i>
                     </div>
                     <p class="text-3xl md:text-4xl font-extrabold text-white mb-1">1000+</p>
-                    <p class="text-xs md:text-sm text-gray-400 leading-snug">직접 운영 + 강사 매칭<br/>누적 교육 프로그램</p>
+                    <p class="text-xs md:text-sm text-gray-400 leading-snug">직접 운영 + 강사 매칭<br/>누적 교육 시간</p>
                 </div>
 
                 <div class="group relative overflow-hidden rounded-2xl border border-sky-500/20 bg-white/[0.04] backdrop-blur-md p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-sky-400/50">
@@ -412,11 +414,6 @@
                 <div>
                     <!-- 대표 사진 -->
                     <div class="profile-img-wrapper">
-                        <!-- 
-                            ✅ 사진 교체 방법:
-                            아래 src="https://..." 부분을 본인 사진 파일명으로 교체
-                            예: src="profile.jpg"
-                        -->
                         <img 
                             src="4.png" 
                             alt="김재근 대표"
@@ -450,7 +447,7 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-blue-500 mt-0.5 flex-shrink-0">✔</span>
-                            <span>고용노동부 취업지원관 인력풀 및 CAP+ 위탁 전임 강사 (5년)</span>
+                            <span>고용노동부 취업지원관 인력풀 및 CAP+ 위탁 전임 강사 </span>
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-blue-500 mt-0.5 flex-shrink-0">✔</span>
@@ -458,7 +455,7 @@
                         </li>
                         <li class="flex items-start gap-2">
                             <span class="text-blue-500 mt-0.5 flex-shrink-0">✔</span>
-                            <span>동의대, 부경대, 고신대, 대구IT 취업센터 등 30개 대학 출강</span>
+                            <span>부산대, 부경대, 동의대, 대구IT 취업센터 등 30개 대학 출강</span>
                         </li>
                     </ul>
                 </div>
@@ -593,7 +590,8 @@
                         <li class="flex items-center gap-2 text-sm text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-blue-500 flex-shrink-0"></span>AI 마케팅</li>
                     </ul>
                 </div>
-                <a href="#apply-form" class="mt-6 text-center text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+                <a href="#contact-center" class="mt-6 text-center text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="interactive-card fade-in-section bg-gray-900/40 border border-gray-800/80 p-7 rounded-2xl flex flex-col justify-between">
@@ -613,7 +611,8 @@
                         <li class="flex items-center gap-2 text-sm text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-indigo-500 flex-shrink-0"></span>공공기관 취업</li>
                     </ul>
                 </div>
-                <a href="#apply-form" class="mt-6 text-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+                <a href="#contact-center" class="mt-6 text-center text-xs font-semibold text-indigo-400 hover:text-indigo-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="interactive-card fade-in-section bg-gray-900/40 border border-gray-800/80 p-7 rounded-2xl flex flex-col justify-between">
@@ -633,7 +632,8 @@
                         <li class="flex items-center gap-2 text-sm text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0"></span>소상공인 창업</li>
                     </ul>
                 </div>
-                <a href="#apply-form" class="mt-6 text-center text-xs font-semibold text-violet-400 hover:text-violet-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+                <a href="#contact-center" class="mt-6 text-center text-xs font-semibold text-violet-400 hover:text-violet-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="interactive-card fade-in-section bg-gray-900/40 border border-gray-800/80 p-7 rounded-2xl flex flex-col justify-between">
@@ -653,7 +653,8 @@
                         <li class="flex items-center gap-2 text-sm text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>조직 활성화</li>
                     </ul>
                 </div>
-                <a href="#apply-form" class="mt-6 text-center text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+                <a href="#contact-center" class="mt-6 text-center text-xs font-semibold text-emerald-400 hover:text-emerald-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="interactive-card fade-in-section bg-gray-900/40 border border-gray-800/80 p-7 rounded-2xl flex flex-col justify-between">
@@ -673,7 +674,8 @@
                         <li class="flex items-center gap-2 text-sm text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-sky-500 flex-shrink-0"></span>팔로워십</li>
                     </ul>
                 </div>
-                <a href="#apply-form" class="mt-6 text-center text-xs font-semibold text-sky-400 hover:text-sky-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+                <a href="#contact-center" class="mt-6 text-center text-xs font-semibold text-sky-400 hover:text-sky-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
 
             <div class="interactive-card fade-in-section bg-gray-900/40 border border-gray-800/80 p-7 rounded-2xl flex flex-col justify-between">
@@ -693,7 +695,8 @@
                         <li class="flex items-center gap-2 text-sm text-gray-400"><span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>고객 경험</li>
                     </ul>
                 </div>
-                <a href="#apply-form" class="mt-6 text-center text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+                <!-- ✅ 24시간 문의접수(폼)로 연결 -->
+                <a href="#contact-center" class="mt-6 text-center text-xs font-semibold text-amber-400 hover:text-amber-300 flex items-center justify-center gap-1">프로그램 문의 <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
             </div>
 
         </div>
@@ -811,79 +814,76 @@
     </div>
 </section>
 
-<!-- ========== 교육 사업 문의 (통합 구글폼) ========== -->
-<section id="apply-form" class="py-24 px-6 bg-gradient-to-b from-gray-950 to-[#0B0F19] border-t border-gray-900 relative">
+<!-- ========== ✅ 1단계: 교육 사업 문의 (카드 안내 영역) ========== -->
+<section id="inquiry-guide" class="py-24 px-6 bg-gradient-to-b from-gray-950 to-[#0B0F19] border-t border-gray-900 relative text-center">
     <div class="max-w-6xl mx-auto">
-
-        <!-- 헤더 -->
-        <div class="text-center mb-16 fade-in-section">
-            <span class="text-xs font-semibold text-blue-400 tracking-wider uppercase mb-2 block">상담 무료 · 전국 출강·운영 가능</span>
-            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">교육 사업 문의</h2>
+        <div class="mb-16 fade-in-section">
+            <span class="text-xs font-semibold text-blue-400 tracking-wider uppercase mb-2 block">Our Service</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">교육 사업 문의 안내</h2>
             <p class="text-gray-400 max-w-2xl mx-auto leading-relaxed">
                 공공기관·기업 교육 사업 기획·운영 또는 전문 강사 매칭을 신청하실 수 있습니다.<br/>
-                <strong class="text-gray-300">첫 질문에서 원하시는 서비스를 선택해 주세요.</strong>
+                아래 서비스를 확인하신 후 <strong>온라인 문의 접수</strong>를 진행해 주세요.
             </p>
         </div>
 
-        <!-- 서비스 안내 카드 -->
-        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16 fade-in-section">
-
+        <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto fade-in-section">
             <div class="bg-gray-900/50 border border-blue-500/20 rounded-2xl p-8 hover:border-blue-400/40 transition-all">
-                <div class="flex items-center gap-3 mb-4">
+                <div class="flex items-center justify-center gap-3 mb-4">
                     <div class="w-10 h-10 rounded-xl bg-blue-500/10 flex items-center justify-center flex-shrink-0">
                         <i data-lucide="settings" class="w-5 h-5 text-blue-400"></i>
                     </div>
                     <h3 class="text-lg font-bold text-white">교육 사업 기획·운영 의뢰</h3>
                 </div>
-                <ul class="space-y-2 text-sm text-gray-400">
+                <ul class="space-y-2 text-sm text-gray-400 text-left">
                     <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> 공공기관 위탁 교육</li>
                     <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> 기업 맞춤형 프로그램 설계</li>
                     <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> 장기 교육 과정 운영</li>
                     <li class="flex items-center gap-2"><span class="text-blue-400">✓</span> 결과 보고 및 성과 분석</li>
                 </ul>
-                <p class="text-xs text-blue-400/70 mt-4 italic">👇 아래 폼에서 "교육 사업 기획·운영" 선택</p>
+                <p class="text-xs text-blue-400/70 mt-6 italic">👇 온라인 접수에서 "교육 사업 기획·운영" 선택</p>
             </div>
 
             <div class="bg-gray-900/50 border border-indigo-500/20 rounded-2xl p-8 hover:border-indigo-400/40 transition-all">
-                <div class="flex items-center gap-3 mb-4">
+                <div class="flex items-center justify-center gap-3 mb-4">
                     <div class="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center flex-shrink-0">
                         <i data-lucide="users-round" class="w-5 h-5 text-indigo-400"></i>
                     </div>
                     <h3 class="text-lg font-bold text-white">전문 강사 매칭</h3>
                 </div>
-                <ul class="space-y-2 text-sm text-gray-400">
+                <ul class="space-y-2 text-sm text-gray-400 text-left">
                     <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> AI·디지털 전문 강사</li>
                     <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> MBTI·소통 전문 강사</li>
                     <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> 취업·창업 전문 강사</li>
                     <li class="flex items-center gap-2"><span class="text-indigo-400">✓</span> 리더십·CS 전문 강사</li>
                 </ul>
-                <p class="text-xs text-indigo-400/70 mt-4 italic">👇 아래 폼에서 "전문 강사 매칭" 선택</p>
+                <p class="text-xs text-indigo-400/70 mt-6 italic">👇 온라인 접수에서 "전문 강사 매칭" 선택</p>
             </div>
+        </div>
+    </div>
+</section>
 
+<!-- ========== ✅ 2단계: 24시간 온라인 문의 접수 (실제 구글폼 섹션) ========== -->
+<section id="contact-center" class="py-24 px-6 bg-[#0B0F19] border-t border-gray-900 relative">
+    <div class="max-w-6xl mx-auto text-center">
+        
+        <div class="mb-12 fade-in-section">
+            <h3 class="text-3xl md:text-4xl font-extrabold text-white mb-4">24시간 온라인 문의 접수</h3>
+            <p class="text-sm text-gray-400">첫 질문에서 원하시는 서비스를 선택하시면 맞춤 질문이 제공됩니다.</p>
         </div>
 
-        <!-- ✅ 통합 구글폼 (2/3 사이즈) -->
+        <!-- 통합 구글폼 (2/3 사이즈 유지) -->
         <div class="max-w-3xl mx-auto fade-in-section">
-            <div class="bg-gray-900/40 border border-gray-800 rounded-2xl p-6 md:p-10 shadow-2xl">
-
-                <div class="text-center mb-8">
-                    <h3 class="text-xl font-bold text-white mb-2">온라인 문의 접수</h3>
-                    <p class="text-sm text-gray-400">작성 시간 약 3~5분 · 접수 후 24시간 이내 연락드립니다.</p>
-                </div>
-
-                <div class="w-full overflow-hidden rounded-xl">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLScHYOggfPm3jGkycmPPxNA2JwkzUhTBU8tgAY64crmCOsNc1g/viewform?embedded=true"
-                        width="100%"
-                        height="1400"
-                        frameborder="0"
-                        marginheight="0"
-                        marginwidth="0"
-                        class="w-full bg-white rounded-lg">
-                        로드 중…
-                    </iframe>
-                </div>
-
+            <div class="bg-gray-900/40 border border-gray-800 rounded-2xl p-6 md:p-10 shadow-2xl overflow-hidden">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScHYOggfPm3jGkycmPPxNA2JwkzUhTBU8tgAY64crmCOsNc1g/viewform?embedded=true"
+                    width="100%"
+                    height="1400"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0"
+                    class="w-full bg-white rounded-lg shadow-inner">
+                    로드 중…
+                </iframe>
             </div>
         </div>
 
@@ -917,18 +917,9 @@
             <p class="text-xs text-gray-600 mt-2">Copyright © 좋은교육연구센터. All rights reserved.</p>
         </div>
         <div class="text-xs text-gray-500 space-y-2">
-            <p class="flex items-center gap-2">
-                <i data-lucide="phone" class="w-4 h-4 text-blue-500"></i>
-                직통전화상담
-            </p>
-            <p class="flex items-center gap-2">
-                <i data-lucide="mail" class="w-4 h-4 text-blue-500"></i>
-                dabindas18@gmail.com
-            </p>
-            <p class="flex items-center gap-2">
-                <i data-lucide="map-pin" class="w-4 h-4 text-blue-500"></i>
-                부산 부산진구 중앙대로 786
-            </p>
+            <p class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 text-blue-500"></i> 직통전화상담</p>
+            <p class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4 text-blue-500"></i> dabindas18@gmail.com</p>
+            <p class="flex items-center gap-2"><i data-lucide="map-pin" class="w-4 h-4 text-blue-500"></i> 부산 부산진구 중앙대로 786</p>
         </div>
     </div>
 </footer>
@@ -939,7 +930,8 @@
         <i data-lucide="phone-call" class="w-5 h-5 animate-bounce"></i>
         <span class="text-sm">직통전화상담</span>
     </a>
-    <a href="#apply-form" class="flex-1 flex items-center justify-center gap-2 text-blue-400 font-bold bg-gray-950 hover:bg-gray-900 transition-colors">
+    <!-- ✅ 모바일도 폼 섹션으로 바로 이동 -->
+    <a href="#contact-center" class="flex-1 flex items-center justify-center gap-2 text-blue-400 font-bold bg-gray-950 hover:bg-gray-900 transition-colors">
         <i data-lucide="edit-3" class="w-5 h-5"></i>
         <span class="text-sm">교육 사업 문의</span>
     </a>
