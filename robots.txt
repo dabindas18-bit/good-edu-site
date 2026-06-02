@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mygood.netlify.app/sitemap.xml
+Sitemap: https://good-edu-site.vercel.app/sitemap.xml
